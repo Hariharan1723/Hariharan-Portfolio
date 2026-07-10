@@ -1,0 +1,35 @@
+{
+  "name": "hariharan-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "postinstall": "node -e \"const fs=require('fs'); const path=require('path'); const candidates=['node_modules/react-pdf/node_modules/pdfjs-dist/build/pdf.worker.min.mjs','node_modules/pdfjs-dist/build/pdf.worker.min.mjs']; const from=candidates.find((p)=>fs.existsSync(p)); if(!from){console.warn('pdf.worker.min.mjs not found; run npm install'); process.exit(0);} fs.copyFileSync(from, path.join('public','pdf.worker.min.mjs'));\""
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "@tsparticles/react": "^4.2.1",
+    "framer-motion": "^12.42.0",
+    "lucide-react": "^1.21.0",
+    "next": "16.2.9",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-icons": "^5.6.0",
+    "react-pdf": "^10.4.1",
+    "react-type-animation": "^3.2.0",
+    "tsparticles": "^4.2.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.9",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
