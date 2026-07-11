@@ -11,6 +11,26 @@ export interface Education {
 
 export const education: Education[] = [
   {
+    degree: "Postgraduate Program in Data Science and Analytics",
+    college: "Imarticus Learning ",
+    university: "",
+    duration: "2025 - 2026",
+    location: "Chennai,India",
+    grade: "80.4%",
+    // coursework: [
+    //   "Financial Management",
+    //   "Investment Analysis & Portfolio Management",
+    //   "Business Statistics",
+    //   "Management Information Systems (MIS)",
+    //   "Wealth Management",
+    // ],
+    // achievements: [
+    //   "Completed specialization in Financial Management.",
+    //   "Gained expertise in investment and portfolio analysis.",
+    //   "Strengthened financial planning and analytical skills.",
+    // ],
+  },
+  {
     degree: "MBA - Financial Management (Correspondence)",
     college: "Annamalai University",
     university: "Annamalai University",

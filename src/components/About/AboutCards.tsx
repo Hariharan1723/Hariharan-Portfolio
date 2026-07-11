@@ -11,27 +11,27 @@ import {
 const cards = [
   {
     icon: <Code2 className="h-8 w-8 text-cyan-400" />,
-    title: "Backend Development",
+    title: "Data Analysis",
     description:
-      "Building scalable APIs and backend services using Go.",
+      "Cleaning, validating, and analyzing large datasets using Python and SQL.",
   },
   {
     icon: <Cloud className="h-8 w-8 text-cyan-400" />,
-    title: "Cloud",
+    title: "Automation",
     description:
-      "Deploying applications with AWS and Docker.",
+      "Automating repetitive Excel and reporting workflows with Python.",
   },
   {
     icon: <Workflow className="h-8 w-8 text-cyan-400" />,
-    title: "Integrations",
+    title: "Business Intelligence",
     description:
-      "Enterprise integrations with CargoWise and REST APIs.",
+      "Building interactive dashboards and KPI reports using Power BI.",
   },
   {
     icon: <Database className="h-8 w-8 text-cyan-400" />,
     title: "Databases",
     description:
-      "Working with MySQL, MongoDB, and scalable data models.",
+      "Working with MySQL and Google BigQuery for data storage and querying.",
   },
 ];
 

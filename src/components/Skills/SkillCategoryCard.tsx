@@ -16,12 +16,12 @@ import Badge from "@/components/ui/Badge";
 import type { SkillCategory } from "@/data/skills";
 
 const iconMap: Record<string, LucideIcon> = {
-  Backend: Server,
-  Cloud: Cloud,
-  Database: Database,
-  DevOps: Container,
-  Languages: Code2,
-  Tools: Wrench,
+  "Data Analytics": Wrench,
+  "Programming": Code2,
+  "Database": Database,
+  "Business Intelligence": Cloud,
+  "Logistics & Business Process": Container,
+  "Leadership & Tools": Server,
 };
 
 interface Props {

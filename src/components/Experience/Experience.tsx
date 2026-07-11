@@ -20,7 +20,7 @@ export default function Experience() {
         <SectionTitle
           subtitle="Career"
           title="Experience"
-          description="My professional journey building scalable backend systems, CargoWise integrations, cloud-native applications and enterprise automation."
+          description="My professional journey in freight rate management, data analytics, and business process improvement in logistics."
         />
 
         <ExperienceTimeline />

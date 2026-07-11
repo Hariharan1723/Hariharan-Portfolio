@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hariharan — Data Analyst Portfolio
+
+A personal portfolio site built with Next.js 16, TypeScript, and Tailwind CSS, showcasing data analytics projects, professional experience in logistics/freight operations, and skills in Python, SQL, and Power BI.
+
+**Live site:** https://hariharan-edith.vercel.app/
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animation:** Framer Motion
+- **Icons:** Lucide React, React Icons
+- **Email delivery:** Mailtrap Send API (contact form)
+- **Hosting:** Vercel
+
+## Project Structure
+
+```
+src/
+  app/
+    api/contact/route.ts   # Serverless API route: handles contact form submissions via Mailtrap
+    layout.tsx              # Root layout + SEO metadata
+    page.tsx                 # Assembles all sections in order
+  components/                # One folder per section (Hero, Experience, Skills, Projects, Contact, etc.)
+  data/                       # Plain TypeScript data files (profile, experience, education, skills, projects)
+  hooks/                      # Custom React hooks
+public/
+  images/                     # Profile photo
+  presentation/                # Project presentation PDFs
+  resume.pdf                   # Downloadable resume
+```
+
+## Key Design Decisions
+
+- **Data/UI separation:** Content (name, experience, projects, skills) lives in `src/data/*.ts` as typed objects, separate from the components that render them. Updating content never requires touching component logic.
+- **Contact form → Mailtrap:** Instead of exposing a personal inbox directly or relying on `mailto:` links, the contact form posts to a Next.js API route (`/api/contact`), which calls Mailtrap's Send API server-side. This keeps the sending credentials off the client and gives delivery logs/tracking.
+- **Environment variables:** All secrets (Mailtrap API token, sender email) are stored in `.env.local`, which is git-ignored and never committed. Production secrets are set directly in the Vercel dashboard.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Copy `.env.local.example` to `.env.local` and fill in:
 
-## Learn More
+- `MAILTRAP_API_TOKEN` — from Mailtrap dashboard → Settings → API Tokens
+- `MAILTRAP_SENDER_EMAIL` — verified sender/domain in Mailtrap
+- `CONTACT_RECEIVER_EMAIL` — where contact form messages should be delivered
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployed on Vercel with automatic redeploys on every push to `main`. Environment variables are configured in the Vercel project dashboard under Settings → Environment Variables.

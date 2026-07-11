@@ -57,7 +57,7 @@ export default function ContactInfo() {
 
           <p className="mt-3 text-gray-400">
             Feel free to reach out for collaborations, opportunities, or just a
-            friendly chat about backend engineering.
+            friendly chat about data analytics.
           </p>
 
           <div className="mt-8 space-y-5">

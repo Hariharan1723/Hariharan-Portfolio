@@ -20,8 +20,8 @@ export default function ExperienceHeader() {
       </h2>
 
       <p className="mx-auto mt-5 max-w-2xl text-lg text-gray-400">
-        My professional journey in backend engineering,
-        cloud technologies and enterprise integrations.
+        My professional journey in freight operations,
+        data analytics and business process improvement.
       </p>
     </motion.div>
   );

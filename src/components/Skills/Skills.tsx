@@ -17,7 +17,7 @@ export default function Skills() {
         <SectionTitle
           subtitle="Expertise"
           title="Skills"
-          description="Technologies and tools I use to build scalable backend systems, cloud integrations, and enterprise automation."
+          description="Technologies and tools I use for data analysis, automation, and business intelligence reporting."
         />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

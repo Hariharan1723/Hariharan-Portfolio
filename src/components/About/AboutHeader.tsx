@@ -16,13 +16,13 @@ export default function AboutHeader() {
       </p>
 
       <h2 className="mt-4 text-5xl font-bold text-white">
-        Building Modern Backend Solutions
+        Turning Data Into Decisions
       </h2>
 
       <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-400">
-        I enjoy building scalable backend systems, enterprise
-        integrations, and cloud-native applications that solve
-        real-world logistics challenges.
+        I enjoy transforming complex logistics and business data into
+        clear, actionable insights through analytics, automation, and
+        dashboards that solve real-world operational challenges.
       </p>
     </motion.div>
   );

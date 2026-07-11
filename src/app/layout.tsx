@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hariharan | Backend Engineer Portfolio",
+  title: "Hariharan | Data Analyst Portfolio",
   description:
-    "Portfolio of Hariharan — Go Backend Engineer specializing in AWS cloud solutions, CargoWise integrations, and enterprise automation.",
+    "Portfolio of Hariharan — Data Analyst specializing in Python, SQL, Power BI, and logistics analytics, transforming complex data into actionable insights.",
 };
 
 export default function RootLayout({
