@@ -70,44 +70,5 @@ export const education: Education[] = [
     //   "Developed business and economic knowledge",
     //   "Enhanced analytical and problem-solving skills.",
     // ],
-  },
-      {
-    degree: "HSC",
-    college: "St. Ann’s Higher Secondary School",
-    university: "",
-    duration: "2015 - 2016",
-    location: "Tindivanam,India",
-    grade: "88 %",
-    // coursework: [
-    //   "Commerce",
-    //   "Accontancy",
-    //   "Economics",
-    //   "Business Maths",
-    // ],
-    // achievements: [
-    //   "Built a strong foundation in accounting and finance.",
-    //   "Developed business and economic knowledge",
-    //   "Enhanced analytical and problem-solving skills.",
-    // ],
-  },
-  {
-    degree: "SSLC",
-    college: "St. Ann’s Higher Secondary School",
-    university: " ",
-    duration: "2013 - 2014 ",
-    location: "Tindivanam,India",
-    grade: "86.4 %",
-    // coursework: [
-    //   "Tamil",
-    //   "English",
-    //   "Mathematics",
-    //   "Science",
-    //   "Social Science",
-    // ],
-    // achievements: [
-    //   "Built a strong foundation in accounting and finance.",
-    //   "Developed business and economic knowledge",
-    //   "Enhanced analytical and problem-solving skills.",
-    // ],
-  },
+  }
 ];

@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 
 const SECTION_IDS = [
   "home",
-  "education",
-  "experience",
   "skills",
+  "experience",
   "projects",
+  "education",
   "contact",
 ];
 

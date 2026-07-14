@@ -8,10 +8,10 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 
 const navItems = [
   { name: "Home", href: "#home" },
-  { name: "Education", href: "#education" },
-  { name: "Experience", href: "#experience" },
   { name: "Skills", href: "#skills" },
+  { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
+  { name: "Education", href: "#education" },
   { name: "Contact", href: "#contact" },
 ];
 

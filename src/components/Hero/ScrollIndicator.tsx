@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react";
 export default function ScrollIndicator() {
   return (
     <motion.a
-      href="#experience"
+      href="#skills"
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
